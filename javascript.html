@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    Nama : <i id="value_nama"></i> 
+    <br>
+    Umur : <i id="value_umur"></i>
+    <br>
+    Tinggi Badan : <i id="value_tinggi"></i>
+    
+    <script>
+        //String Variable
+        var nama = "Raya Kitty";
+
+        //Number Variable
+        let umur = 19;
+
+        //Length Variable
+        let tinggi = 157;
+
+        //Array 
+        let film_favorit =["Minion", "Toy Story", "Wednesday"];
+
+        //Console Log
+        console.log("Nama: " + nama);
+        console.log("Umur: " + umur + " Tahun");
+        console.log("Tinggi Badan: " + tinggi + " cm");
+        console.log("Film Favorit: " + film_favorit[1]);
+
+        //Arithmetic Operation
+        let a = 100
+        let b = 25
+
+        let jumlah = a + b
+        console.log("Hasil Penjumlahan: " + jumlah)
+
+        let kurang = a - b
+        console.log("Hasil Pengurangan: " + kurang)
+
+        let kali = a * b
+        console.log("Hasil Perkalian: " + kali)
+
+        let bagi = a / b
+        console.log("Hasil Pembagian: " + bagi)
+
+        let sisa = a % b
+        console.log("Hasil Sisa Bagi: " + sisa)
+
+        let pangkat = a ** 2
+        console.log("Hasil Pangkat: " + pangkat)
+
+        //Conditional Statement
+        if ("nilai >= 90") {
+            console.log("Nilai A");
+        } else if ("nilai >= 80") {
+            console.log("Nilai B");
+        } else if ("nilai >= 70") {
+            console.log("Nilai C");
+        } else if ("nilai >= 60") {
+            console.log("Nilai D");
+        } else {
+            console.log("Nilai E");
+        }
+
+        //Looping
+        for (let i = 1; i <= 100; i++) {
+            console.log(i);
+        }
+
+        //Function
+        function Penjumlahan(a, b) { 
+            return console.log("Hasil Penjumlahan: " + (a + b));
+        }
+
+        Penjumlahan(10, 5);
+
+        //Menampilkan nama di halaman web (DOM)
+        document.getElementById("value_nama").innerHTML = nama; 
+        document.getElementById("value_umur").innerHTML = umur + " Tahun"; 
+        document.getElementById("value_tinggi").innerHTML = tinggi + " cm";
+    </script>
+</body>
+</html>
